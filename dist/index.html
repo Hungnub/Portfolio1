@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio blog ca nhan ve san pham so, lap trinh va nhung ghi chu thuc chien."
+    />
+    <meta name="theme-color" content="#10231f" />
+    <meta property="og:title" content="Portfolio Blog | Nguyen Minh" />
+    <meta
+      property="og:description"
+      content="Portfolio, case studies va blog ca nhan cua mot developer yeu san pham co ich."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/public/portfolio-hero.png" />
+    <title>Nguyen Minh | Portfolio Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="Ve dau trang">
+        <span class="brand-mark">NM</span>
+        <span>Nguyen Minh</span>
+      </a>
+      <nav class="nav" aria-label="Dieu huong chinh">
+        <a href="#work">Du an</a>
+        <a href="#blog">Blog</a>
+        <a href="#about">Gioi thieu</a>
+        <a class="nav-cta" href="mailto:hello@example.com">Lien he</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="public/portfolio-hero.png"
+          alt="Ban lam viec hien dai voi laptop, so tay va anh sang am"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Developer portfolio + writing studio</p>
+          <h1 id="hero-title">Xay dung san pham so co ich, roi viet lai nhung dieu hoc duoc.</h1>
+          <p class="hero-copy">
+            Minh la developer tap trung vao web app, trai nghiem nguoi dung va nhung he thong
+            gon gang de doi nguoi that su dung moi ngay.
+          </p>
+          <div class="hero-actions" aria-label="Hanh dong chinh">
+            <a class="button primary" href="#work">Xem du an</a>
+            <a class="button secondary" href="#blog">Doc blog</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Thong tin nhanh">
+        <div>
+          <strong>5+</strong>
+          <span>nam lam web</span>
+        </div>
+        <div>
+          <strong>18</strong>
+          <span>du an da ship</span>
+        </div>
+        <div>
+          <strong>42</strong>
+          <span>bai viet ghi chu</span>
+        </div>
+      </section>
+
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Du an gan day</h2>
+          <p>
+            Mot vai case study mau de ban thay bo cuc portfolio. Thay noi dung nay bang du an
+            that khi deploy.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">
+              <span>SaaS dashboard</span>
+              <span>2026</span>
+            </div>
+            <h3>Atlas CRM</h3>
+            <p>
+              Thiet ke lai luong quan ly khach hang, giam thao tac lap lai va tang toc do quet
+              thong tin cho doi sales.
+            </p>
+            <a href="#contact">Xem ghi chu</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Content platform</span>
+              <span>2025</span>
+            </div>
+            <h3>Field Notes</h3>
+            <p>
+              Mot he thong blog noi bo voi tagging, tim kiem nhanh va quy trinh bien tap cho nhom
+              san pham.
+            </p>
+            <a href="#blog">Doc bai lien quan</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">
+              <span>Automation</span>
+              <span>2025</span>
+            </div>
+            <h3>Ops Flow</h3>
+            <p>
+              Cong cu tu dong hoa bao cao tu spreadsheet, giup team van hanh tiet kiem nhieu gio
+              moi tuan.
+            </p>
+            <a href="#contact">Trao doi them</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section blog-section" id="blog" aria-labelledby="blog-title">
+        <div class="section-heading">
+          <p class="eyebrow">Blog</p>
+          <h2 id="blog-title">Bai viet moi</h2>
+          <p>
+            Loc theo chu de de bien portfolio thanh mot blog nho, phu hop cho Vercel va de mo rong
+            thanh CMS sau nay.
+          </p>
+        </div>
+        <div class="filters" aria-label="Loc bai viet">
+          <button class="filter-button active" type="button" data-filter="all">Tat ca</button>
+          <button class="filter-button" type="button" data-filter="Product">Product</button>
+          <button class="filter-button" type="button" data-filter="Engineering">Engineering</button>
+          <button class="filter-button" type="button" data-filter="Notes">Notes</button>
+        </div>
+        <div class="blog-grid" id="posts" aria-live="polite"></div>
+      </section>
+
+      <section class="about-band" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Mot profile nho, co the lon len theo tung bai viet.</h2>
+        </div>
+        <p>
+          Thay phan nay bang cau chuyen cua ban: ban dang lam gi, thich giai quyet van de nao, va
+          dang tim co hoi hop tac kieu gi. Portfolio dang duoc cau truc de doc tot tren mobile,
+          desktop va deploy truc tiep len Vercel.
+        </p>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Co mot y tuong dang can nguoi bien no thanh san pham?</h2>
+        <a class="button primary" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Nguyen Minh</span>
+      <span>Built for Vercel</span>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
